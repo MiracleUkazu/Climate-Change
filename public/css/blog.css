@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo {
+    font-size: 2em;
+    color: rgb(137, 197, 250);
+    user-select: none;
+}
+.navbar a{
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(137, 197, 250);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(137, 197, 250);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navbar a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.head{
+    margin-top: 60px;
+    width: 100%;
+    height:  calc(100vh - 60px);
+    background: url(../blog/Tiny\ screenwriter\ sitting\ on\ retro\ typewriter.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    text-align: center;
+}
+.heading{
+    color: rgb(99, 178, 248);
+    text-transform: capitalize;
+    font-size: 80px;
+    line-height: 60px;
+    margin-bottom: 80px;
+}
+.heading .small{
+    display: block;
+    font-size: 40px;
+}
+.heading .no-fill{
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(137, 197, 250);
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(137, 197, 250);
+    border: 2px solid rgb(137, 197, 250);
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn:hover {
+    background: transparent;
+    color: rgb(99, 178, 248);
+}
+.blogs-section{
+    position: relative;
+    width: 100%;
+    padding: 50px 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+}
+.blog-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.blog-overview{
+    margin: 10px;
+    line-height: 30px;
+}
+.btn.dark{
+    background: black;
+    border: 2px solid black;
+    color: aliceblue;
+    transition: .5s;
+}
+.btn.btn.dark:hover {
+    background: transparent;
+    color: #444;
+}

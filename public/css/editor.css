@@ -1,0 +1,102 @@
+.banner{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: aliceblue;
+    background-size: cover;
+    background-position: center;
+}
+.banner-upload-btn{
+    position: absolute;
+    bottom: 20px;
+    width: 40px;
+    right: 20px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.banner-upload-btn i{
+    width: 24px;
+    font-size: 25px;
+}
+.blog{
+    width: 70vw;
+    min-width: 400px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding: 50px 0;
+}
+textarea::-webkit-scrollbar{
+    width: 10px;
+}
+textarea::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.title,
+.article{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    outline: none;
+    font-size: 50px;
+    font-weight: 600;
+    color: #2d2d2d;
+    resize: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.title::placeholder,
+.article::placeholder{
+    color: #2d2d2d;
+}
+.article{
+    height: 500px;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+    font-family: 500;
+    padding-bottom: 100px;
+    white-space: pre-wrap;
+}
+.blog-options{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: aliceblue;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn.grey{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(50, 51, 53);
+    border: 2px solid rgb(50, 51, 53);
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 14px;
+    margin-left: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn.grey:hover {
+    background: transparent;
+    color: rgb(50, 51, 53);
+}
